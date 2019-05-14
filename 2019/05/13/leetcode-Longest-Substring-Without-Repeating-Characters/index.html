@@ -29,7 +29,7 @@
 <meta property="og:site_name" content="life is a chocolate">
 <meta property="og:description" content="problem  Given a string, find the length of the longest substring without repeating characters. Example 1: Input: “abcabcbb”Output: 3Explanation: The answer is “abc”, with the length of 3.Example 2: I">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-05-13T02:39:22.989Z">
+<meta property="og:updated_time" content="2019-05-13T02:50:34.068Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="leetcode:Longest Substring Without Repeating Characters">
 <meta name="twitter:description" content="problem  Given a string, find the length of the longest substring without repeating characters. Example 1: Input: “abcabcbb”Output: 3Explanation: The answer is “abc”, with the length of 3.Example 2: I">
@@ -117,7 +117,7 @@
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
                 <i class="icon icon-lg icon-chevron-left"></i>
             </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="検索">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
                 <i class="icon icon-lg icon-search"></i>
             </a>
@@ -156,7 +156,7 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#problem"><span class="post-toc-number">1.</span> <span class="post-toc-text">problem</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#solve"><span class="post-toc-number">2.</span> <span class="post-toc-text">solve:</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#right-answer"><span class="post-toc-number">3.</span> <span class="post-toc-text">right answer:</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#problem"><span class="post-toc-number">1.</span> <span class="post-toc-text">problem</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#wrong-answer"><span class="post-toc-number">2.</span> <span class="post-toc-text">wrong answer:</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#right-answer"><span class="post-toc-number">3.</span> <span class="post-toc-text">right answer:</span></a></li></ol>
         </nav>
     </aside>
 
@@ -184,7 +184,7 @@
 <p>Input: “abcabcbb”<br>Output: 3<br>Explanation: The answer is “abc”, with the length of 3.<br>Example 2:</p>
 <p>Input: “bbbbb”<br>Output: 1<br>Explanation: The answer is “b”, with the length of 1.<br>Example 3:</p>
 <p>Input: “pwwkew”<br>Output: 3<br>Explanation: The answer is “wke”, with the length of 3.<br>             Note that the answer must be a substring, “pwke” is a subsequence and not a substring.</p>
-<h1 id="solve"><a href="#solve" class="headerlink" title="solve:"></a>solve:</h1><p> wrong answer:<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * @param String $s</span><br><span class="line">     * @return Integer</span><br><span class="line">     */</span><br><span class="line">    function lengthOfLongestSubstring($s) &#123;</span><br><span class="line">        $newArr=str_split($s);</span><br><span class="line">        $tempArr=[];</span><br><span class="line">        $lenArr=[]; </span><br><span class="line">        foreach($newArr as $val)&#123;</span><br><span class="line">            if(in_array($val,$tempArr))&#123;</span><br><span class="line">                $lenArr[]=count($tempArr);</span><br><span class="line">                unset($tempArr[array_search($val,$tempArr)]);</span><br><span class="line">            &#125;</span><br><span class="line">            $tempArr[]=$val;    </span><br><span class="line">        &#125;</span><br><span class="line">        return max($lenArr)?:0;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h1 id="wrong-answer"><a href="#wrong-answer" class="headerlink" title="wrong answer:"></a>wrong answer:</h1> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * @param String $s</span><br><span class="line">     * @return Integer</span><br><span class="line">     */</span><br><span class="line">    function lengthOfLongestSubstring($s) &#123;</span><br><span class="line">        $newArr=str_split($s);</span><br><span class="line">        $tempArr=[];</span><br><span class="line">        $lenArr=[]; </span><br><span class="line">        foreach($newArr as $val)&#123;</span><br><span class="line">            if(in_array($val,$tempArr))&#123;</span><br><span class="line">                $lenArr[]=count($tempArr);</span><br><span class="line">                unset($tempArr[array_search($val,$tempArr)]);</span><br><span class="line">            &#125;</span><br><span class="line">            $tempArr[]=$val;    </span><br><span class="line">        &#125;</span><br><span class="line">        return max($lenArr)?:0;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h1 id="right-answer"><a href="#right-answer" class="headerlink" title="right answer:"></a>right answer:</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * @param String $s</span><br><span class="line">     * @return Integer</span><br><span class="line">     */</span><br><span class="line">    function lengthOfLongestSubstring($s) &#123;</span><br><span class="line">        $newArr=str_split($s);</span><br><span class="line">        $notRepeatString=&apos;&apos;;</span><br><span class="line">        $lenArr=[]; </span><br><span class="line">        foreach($newArr as $index=&gt; $val)&#123;</span><br><span class="line">            if(strpos($notRepeatString,$val)!==False)&#123;</span><br><span class="line">                    $notRepeatString=substr($notRepeatString,strpos($notRepeatString,$val)+1);</span><br><span class="line">            &#125; </span><br><span class="line">            $notRepeatString.=$val;</span><br><span class="line">            $lenArr[]=strlen($notRepeatString);</span><br><span class="line">        &#125;</span><br><span class="line">        return max($lenArr)?:0;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
         </div>
@@ -194,7 +194,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2019-05-13T02:39:22.989Z" itemprop="dateUpdated">2019-05-13 10:39:22</time>
+    最終更新：<time datetime="2019-05-13T02:50:34.068Z" itemprop="dateUpdated">2019-05-13 10:50:34</time>
 </span><br>
 
 
@@ -275,7 +275,14 @@
     </div>
 
     
-<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2019/05/13/problem-list/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">problem-list</h4>
+      </a>
+    </div>
   
 
   
@@ -366,7 +373,7 @@
 
         <p>
             
-            <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
+            <span>このブログの内容物は<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ja">クリエイティブ・コモンズ 表示 - 非営利 - 継承 4.0 国際ライセンスの下に提供されています</a></span>
         </p>
     </div>
     <div class="bottom">
