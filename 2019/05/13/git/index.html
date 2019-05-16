@@ -28,7 +28,7 @@
 <meta property="og:site_name" content="life is a chocolate">
 <meta property="og:description" content="Git is  a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. 常用命令：  从命令行创建一个新的仓库，关联到该远程分支  #关联和取消关联远程仓库：">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-05-13T05:38:32.534Z">
+<meta property="og:updated_time" content="2019-05-15T03:25:18.058Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git">
 <meta name="twitter:description" content="Git is  a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. 常用命令：  从命令行创建一个新的仓库，关联到该远程分支  #关联和取消关联远程仓库：">
@@ -116,7 +116,7 @@
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
                 <i class="icon icon-lg icon-chevron-left"></i>
             </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="検索">
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="搜尋">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
                 <i class="icon icon-lg icon-search"></i>
             </a>
@@ -155,7 +155,7 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#查看和删除远程分支："><span class="post-toc-number">1.</span> <span class="post-toc-text">查看和删除远程分支：</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#强制推送"><span class="post-toc-number">2.</span> <span class="post-toc-text">强制推送</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#拉取私有github-项目"><span class="post-toc-number">3.</span> <span class="post-toc-text">拉取私有github 项目</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#查看和删除远程分支："><span class="post-toc-number">1.</span> <span class="post-toc-text">查看和删除远程分支：</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#强制推送"><span class="post-toc-number">2.</span> <span class="post-toc-text">强制推送</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#拉取私有github-项目"><span class="post-toc-number">3.</span> <span class="post-toc-text">拉取私有github 项目</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#rebase"><span class="post-toc-number">4.</span> <span class="post-toc-text">rebase</span></a></li></ol>
         </nav>
     </aside>
 
@@ -187,7 +187,7 @@
 <h1 id="查看和删除远程分支："><a href="#查看和删除远程分支：" class="headerlink" title="查看和删除远程分支："></a>查看和删除远程分支：</h1><p>git branch -ｒ<br>git branch -r -d origin/branch-name<br>git push origin :branch-name </p>
 <h1 id="强制推送"><a href="#强制推送" class="headerlink" title="强制推送"></a>强制推送</h1><p>git push -u origin master -f<br>其中的-u 表示 –set-upstream<br>-f 表示 –force</p>
 <h1 id="拉取私有github-项目"><a href="#拉取私有github-项目" class="headerlink" title="拉取私有github 项目"></a>拉取私有github 项目</h1><p>two way:<br>a.共享private repository 的git地址；<br>共享该private repository所有者的github账户及密码。<br>git clone + private repository的git地址:Clone with HTTPS的方式拉取项目repo。<br>稍等后会提示输入账户名和密码，输入即可<br>b.配置多个RSA公钥到github<br>每个developer在自己的电脑上生成自己的RSA秘钥对，并把公钥配置到创建该private repository的github账户中，此后即可像github账户拥有者一样自由克隆并提交该private repository。<br><a href="https://blog.csdn.net/tterminator/article/details/52444394" target="_blank" rel="noopener">https://blog.csdn.net/tterminator/article/details/52444394</a></p>
-
+<h1 id="rebase"><a href="#rebase" class="headerlink" title="rebase"></a>rebase</h1>
         </div>
 
         <blockquote class="post-copyright">
@@ -195,7 +195,7 @@
     <div class="content">
         
 <span class="post-time">
-    最終更新：<time datetime="2019-05-13T05:38:32.534Z" itemprop="dateUpdated">2019-05-13 13:38:32</time>
+    最後更新時間：<time datetime="2019-05-15T03:25:18.058Z" itemprop="dateUpdated">2019-05-15 11:25:18</time>
 </span><br>
 
 
@@ -372,7 +372,7 @@
 
         <p>
             
-            <span>このブログの内容物は<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ja">クリエイティブ・コモンズ 表示 - 非営利 - 継承 4.0 国際ライセンスの下に提供されています</a></span>
+            <span>本部落格係採用<a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW">創用 CC 姓名標示 4.0 國際 授權條款授權</a></span>
         </p>
     </div>
     <div class="bottom">
