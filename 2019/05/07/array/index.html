@@ -29,7 +29,7 @@
 <meta property="og:site_name" content="life is a chocolate">
 <meta property="og:description" content="how stackoverflowhttps://stackoverflow.com/questions/17364127/how-can-i-sort-arrays-and-data-in-php  array_merge() and array+array difference？   Integrate arrays and sort them   Sort the check_time in">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-05-29T03:34:17.311Z">
+<meta property="og:updated_time" content="2019-07-17T09:29:51.036Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="array">
 <meta name="twitter:description" content="how stackoverflowhttps://stackoverflow.com/questions/17364127/how-can-i-sort-arrays-and-data-in-php  array_merge() and array+array difference？   Integrate arrays and sort them   Sort the check_time in">
@@ -156,7 +156,7 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#array-diff-array-unique-array-search-array"><span class="post-toc-number">1.</span> <span class="post-toc-text">array_diff.array_unique.array_search. array_</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#array-diff-array-unique-array-search-array"><span class="post-toc-number">1.</span> <span class="post-toc-text">array_diff.array_unique.array_search. array_</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#array-map-returns-an-array-containing-the-results-of-applying-the-callback-function-to-the-corresponding-index-of-array1-and-if-more-arrays-are-provided-used-as-arguments-for-the-callback-the-number-of-parameters-that-the-callback-function-accepts-should-match-the-number-of-arrays-passed-to-array-map"><span class="post-toc-number">2.</span> <span class="post-toc-text">array_map() returns an array containing the results of applying the callback function to the corresponding index of array1(and if more arrays are provided)used as arguments for the callback.the number of parameters that the callback function accepts should match the number of arrays passed to array_map();</span></a></li></ol>
         </nav>
     </aside>
 
@@ -187,8 +187,11 @@
 <li>Integrate arrays and sort them<br>   Sort the check_time in the array from small to  large<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$newData = array_merge($procureData, $returnData, $settleOneData, $settleTwoData);</span><br><span class="line">usort($newData, function ($a, $b) &#123;</span><br><span class="line">    return $a[&apos;check_time&apos;] - $b[&apos;check_time&apos;];</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<p>2.array_multisort</p>
-<h1 id="array-diff-array-unique-array-search-array"><a href="#array-diff-array-unique-array-search-array" class="headerlink" title="array_diff.array_unique.array_search. array_"></a>array_diff.array_unique.array_search. array_</h1>
+<p>2.array_multisort<br>can be used to sort serveral arrays at once , or a multi-dimen</p>
+<p><a href="https://juejin.im/post/5b7bdc296fb9a01a13366bc7" target="_blank" rel="noopener">https://juejin.im/post/5b7bdc296fb9a01a13366bc7</a>  sort algorithm</p>
+<p><a href="https://segmentfault.com/a/1190000008595606" target="_blank" rel="noopener">https://segmentfault.com/a/1190000008595606</a></p>
+<h1 id="array-diff-array-unique-array-search-array"><a href="#array-diff-array-unique-array-search-array" class="headerlink" title="array_diff.array_unique.array_search. array_"></a>array_diff.array_unique.array_search. array_</h1><h1 id="array-map-returns-an-array-containing-the-results-of-applying-the-callback-function-to-the-corresponding-index-of-array1-and-if-more-arrays-are-provided-used-as-arguments-for-the-callback-the-number-of-parameters-that-the-callback-function-accepts-should-match-the-number-of-arrays-passed-to-array-map"><a href="#array-map-returns-an-array-containing-the-results-of-applying-the-callback-function-to-the-corresponding-index-of-array1-and-if-more-arrays-are-provided-used-as-arguments-for-the-callback-the-number-of-parameters-that-the-callback-function-accepts-should-match-the-number-of-arrays-passed-to-array-map" class="headerlink" title="array_map() returns an array containing the results of applying the callback function to the corresponding index of array1(and if more arrays are provided)used as arguments for the callback.the number of parameters that the callback function accepts should match the number of arrays passed to array_map();"></a>array_map() returns an array containing the results of applying the callback function to the corresponding index of array1(and if more arrays are provided)used as arguments for the callback.the number of parameters that the callback function accepts should match the number of arrays passed to array_map();</h1><p> for example:</p>
+
         </div>
 
         <blockquote class="post-copyright">
@@ -196,7 +199,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2019-05-29T03:34:17.311Z" itemprop="dateUpdated">2019-05-29 11:34:17</time>
+    Last updated: <time datetime="2019-07-17T09:29:51.036Z" itemprop="dateUpdated">2019-07-17 17:29:51</time>
 </span><br>
 
 
