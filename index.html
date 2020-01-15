@@ -112,7 +112,7 @@
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
                 <i class="icon icon-lg icon-chevron-left"></i>
             </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="検索">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
                 <i class="icon icon-lg icon-search"></i>
             </a>
@@ -144,6 +144,126 @@
 <div class="container body-wrap">
 
     <ul class="post-list">
+    
+        <li class="post-list-item fade">
+            <article id="post-Thinkphp5-多图片上传重名的解决办法" class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2019-12-26 17:45:22" datetime="2019-12-26T09:45:22.000Z" itemprop="datePublished">2019-12-26</time>
+
+        
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2019/12/26/Thinkphp5-多图片上传重名的解决办法/">Thinkphp5 多图片上传重名的解决办法</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        tp内部的file拓展生成的文件名会重复,直接修改tp5内部file文件
+修改前：
+ switch ($this-&gt;rule) {
+                case &apos;date&apos;:
+                    $savename = date(&apos;Ymd&apos;) . DS . md5(microtime(true));
+      ...
+    
+
+        <a href="/2019/12/26/Thinkphp5-多图片上传重名的解决办法/" class="post-more waves-effect waves-button">
+            続きを読む…
+        </a>
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item fade">
+            <article id="post-update-返回提示" class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2019-12-26 16:39:22" datetime="2019-12-26T08:39:22.000Z" itemprop="datePublished">2019-12-26</time>
+
+        
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2019/12/26/update-返回提示/">update 返回提示</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+          update 如果没有修改数据，返回空，判断用!==false，可以判断
+
+    
+
+        <a href="/2019/12/26/update-返回提示/" class="post-more waves-effect waves-button">
+            続きを読む…
+        </a>
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item fade">
+            <article id="post-json数组转换问题" class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2019-12-26 15:29:04" datetime="2019-12-26T07:29:04.000Z" itemprop="datePublished">2019-12-26</time>
+
+        
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2019/12/26/json数组转换问题/">json数组转换问题</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+         后台传的数据是： {    “code”: 200,    “msg”: “”,    “time”: “1577345385”,    “data”: [        {            “id”: 1,            “name”: “1”,            “parent_id”: 0,            “pc_default_icon”: “dssd”,...
+    
+
+        <a href="/2019/12/26/json数组转换问题/" class="post-more waves-effect waves-button">
+            続きを読む…
+        </a>
+    </div>
+    
+</article>
+
+        </li>
     
         <li class="post-list-item fade">
             <article id="post-三级分类总结" class="article-card article-type-post" itemprop="blogPost">
@@ -185,7 +305,7 @@ public static function getChild($data)
     
 
         <a href="/2019/12/17/三级分类总结/" class="post-more waves-effect waves-button">
-            Continue reading...
+            続きを読む…
         </a>
     </div>
     
@@ -225,7 +345,7 @@ public static function getChild($data)
     
 
         <a href="/2019/10/15/yii/" class="post-more waves-effect waves-button">
-            Continue reading...
+            続きを読む…
         </a>
     </div>
     
@@ -264,7 +384,7 @@ public static function getChild($data)
     
 
         <a href="/2019/09/06/what-l-have-experiecend/" class="post-more waves-effect waves-button">
-            Continue reading...
+            続きを読む…
         </a>
     </div>
     
@@ -303,7 +423,7 @@ public static function getChild($data)
     
 
         <a href="/2019/09/05/ps/" class="post-more waves-effect waves-button">
-            Continue reading...
+            続きを読む…
         </a>
     </div>
     
@@ -341,7 +461,7 @@ public static function getChild($data)
     
 
         <a href="/2019/08/23/听书笔记/" class="post-more waves-effect waves-button">
-            Continue reading...
+            続きを読む…
         </a>
     </div>
     
@@ -379,7 +499,7 @@ public static function getChild($data)
     
 
         <a href="/2019/08/20/novel/" class="post-more waves-effect waves-button">
-            Continue reading...
+            続きを読む…
         </a>
     </div>
     
@@ -417,124 +537,7 @@ public static function getChild($data)
     
 
         <a href="/2019/08/06/record/" class="post-more waves-effect waves-button">
-            Continue reading...
-        </a>
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-phpnet" class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2019-08-02 14:39:19" datetime="2019-08-02T06:39:19.000Z" itemprop="datePublished">2019-08-02</time>
-
-        
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2019/08/02/phpnet/">phpnet</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        basement knowledge1.php classes and objects  visibility.abstract.final classed and methods. additional magic methods,interfaces,cloning and typehinting.
-
-  php treats objects in the same way as ref...
-    
-
-        <a href="/2019/08/02/phpnet/" class="post-more waves-effect waves-button">
-            Continue reading...
-        </a>
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-写作" class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2019-07-16 10:01:36" datetime="2019-07-16T02:01:36.000Z" itemprop="datePublished">2019-07-16</time>
-
-        
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2019/07/16/写作/">写作</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        写作无疑是最具有自我投资价值的一项爱好，首先写作是记录自己的想法的一个过程，而这个过程必然是你对事物的认识，在记录自己的过程中，你也开始懂得去审视自我，以及细心的去审视外在世界，最近一段时间感觉颇为之苦恼，在于自己无法找到一个好的渠道去倾诉自己的情感,想想别人向我倾诉时，我就非常不想听，因为很累,非亲非故的让我听他的糟心事，会很反感，但是另外一方面，如果一个女孩子愿意对你倾诉，那就是极大的好...
-    
-
-        <a href="/2019/07/16/写作/" class="post-more waves-effect waves-button">
-            Continue reading...
-        </a>
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-object-oriented" class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2019-07-11 10:30:14" datetime="2019-07-11T02:30:14.000Z" itemprop="datePublished">2019-07-11</time>
-
-        
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2019/07/11/object-oriented/">object-oriented</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        spl_autoload_register()because it is  a more flexible alternative(enabling for any number of autoloadeds to be specified in the application).
-
-    
-
-        <a href="/2019/07/11/object-oriented/" class="post-more waves-effect waves-button">
-            Continue reading...
+            続きを読む…
         </a>
     </div>
     
@@ -569,7 +572,7 @@ public static function getChild($data)
 
         <p>
             
-            <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
+            <span>このブログの内容物は<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ja">クリエイティブ・コモンズ 表示 - 非営利 - 継承 4.0 国際ライセンスの下に提供されています</a></span>
         </p>
     </div>
     <div class="bottom">
